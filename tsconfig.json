@@ -3,6 +3,7 @@
   "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
     "allowJs": true,
+    "baseUrl": ".",
     "outDir": "./dist"
   },
   "exclude": ["./dist", "./*.config.ts", "./test", "./coverage"]

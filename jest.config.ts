@@ -7,6 +7,7 @@
 export default {
   preset: "ts-jest",
   testEnvironment: "node",
+  moduleDirectories: ["node_modules", "<rootDir>"],
   collectCoverage: true,
   coverageDirectory: "coverage",
   coverageProvider: "v8",

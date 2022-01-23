@@ -1,2 +1,2 @@
-import phrase from "../lib/phrase";
+import phrase from "lib/phrase";
 console.log(phrase);
