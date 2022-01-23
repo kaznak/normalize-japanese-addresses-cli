@@ -8,9 +8,13 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --ignore-unknown --write .",
+    "lint": "eslint .",
     "prepare": "if type husky ; then husky install ; fi"
   },
   "lint-staged": {
+    "*.(ts|js)": [
+      "eslint"
+    ],
     "*": [
       "prettier --ignore-unknown --write"
     ]
