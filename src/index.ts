@@ -1,3 +1,4 @@
+import { Command } from "commander";
 import { parse } from "csv-parse";
 import { stringify } from "csv-stringify";
 import { NormalizeJapaneseAddressesCSV } from "lib/stream/normalizeJapaneseAddresses";
@@ -10,4 +11,12 @@ function main(indices: Array<number>) {
     .pipe(process.stdout);
 }
 
-main([0]);
+const program = new Command();
+program
+  .argument("[indices...]", "field indices of CSV")
+  .action((argIndices: Array<string>) => {
+    const indices =
+      0 == argIndices.length ? [0] : argIndices.map((i) => parseInt(i) - 1);
+    return main(indices);
+  });
+program.parse();
