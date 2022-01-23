@@ -54,7 +54,7 @@ export class NormalizeJapaneseAddressesCSV extends Transform {
     this.normalizeResultKeys = innerOptions.normalizeResultKeys;
   }
   _transform(
-    record: Array<any>,
+    record: Array<unknown>,
     _: BufferEncoding,
     callback: TransformCallback
   ): void {
@@ -65,7 +65,7 @@ export class NormalizeJapaneseAddressesCSV extends Transform {
       callback(null, record.concat(headers));
       this.header = false;
     } else {
-      Promise.all(this.indices.map((i) => normalize(record[i]))).then(
+      Promise.all(this.indices.map((i) => normalize(record[i] as string))).then(
         (addrObjs) => {
           const addrRecord = addrObjs.flatMap((addrObj) =>
             this.normalizeResultKeys.map((attr) => addrObj[attr])
