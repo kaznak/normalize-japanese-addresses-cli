@@ -9,6 +9,11 @@
   "scripts": {
     "format": "prettier --ignore-unknown --write ."
   },
+  "lint-staged": {
+    "*": [
+      "prettier --ignore-unknown --write"
+    ]
+  },
   "devDependencies": {
     "husky": "^7.0.4",
     "lint-staged": "^12.2.2",
