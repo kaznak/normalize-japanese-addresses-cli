@@ -14,7 +14,7 @@
     "clean": "rimraf index.js coverage dist",
     "format": "prettier --ignore-unknown --write .",
     "lint": "eslint .",
-    "prepare": "if type husky ; then husky install ; fi",
+    "prepare": "husky install",
     "prepublishOnly": "run-s build",
     "test": "jest"
   },
