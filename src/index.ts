@@ -13,7 +13,7 @@ function main(indices: Array<number>) {
 
 const program = new Command();
 program
-  .argument("[indices...]", "field indices of CSV")
+  .argument("[indices...]", "field indices(1 origin) of CSV")
   .action((argIndices: Array<string>) => {
     const indices =
       0 == argIndices.length ? [0] : argIndices.map((i) => parseInt(i) - 1);
