@@ -5,13 +5,13 @@
   "repository": "git@github.com:kaznak/normalize-japanese-addresses-cli.git",
   "license": "MIT",
   "author": "kaznak <kaznak.at.work@gmail.com>",
-  "main": "dist/src/index.js",
+  "main": "dist/index.js",
   "bin": {
-    "hello-nodejs": "./dist/src/index.js"
+    "hello-nodejs": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsc",
-    "clean": "rimraf coverage dist",
+    "build": "rollup -c",
+    "clean": "rimraf index.js coverage dist",
     "format": "prettier --ignore-unknown --write .",
     "lint": "eslint .",
     "prepare": "if type husky ; then husky install ; fi",
