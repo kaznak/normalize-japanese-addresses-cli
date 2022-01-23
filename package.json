@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "clean": "rimraf index.js coverage dist",
+    "clean": "rimraf coverage dist",
     "format": "prettier --ignore-unknown --write .",
     "lint": "eslint .",
     "prepare": "husky install",
