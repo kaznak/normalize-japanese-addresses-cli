@@ -2,6 +2,12 @@
 
 CLI of geolonia/normalize-japanese-addresses
 
+## Install
+
+```
+yarn add normalize-japanese-addresses-cli
+```
+
 ## Usage
 
 ```
