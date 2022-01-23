@@ -7,7 +7,8 @@
   "author": "kaznak <kaznak.at.work@gmail.com>",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --ignore-unknown --write ."
+    "format": "prettier --ignore-unknown --write .",
+    "prepare": "if type husky ; then husky install ; fi"
   },
   "lint-staged": {
     "*": [
