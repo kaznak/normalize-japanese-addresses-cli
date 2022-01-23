@@ -6,6 +6,9 @@
   "license": "MIT",
   "author": "kaznak <kaznak.at.work@gmail.com>",
   "main": "dist/src/index.js",
+  "bin": {
+    "hello-nodejs": "./dist/src/index.js"
+  },
   "scripts": {
     "build": "tsc",
     "clean": "rimraf coverage dist",
