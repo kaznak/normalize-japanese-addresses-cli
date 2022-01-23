@@ -7,13 +7,14 @@
   "author": "kaznak <kaznak.at.work@gmail.com>",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "format": "prettier --ignore-unknown --write .",
     "lint": "eslint .",
     "prepare": "if type husky ; then husky install ; fi",
     "test": "jest"
   },
   "lint-staged": {
-    "*.js": [
+    "*.{js,ts}": [
       "eslint"
     ],
     "*": [
