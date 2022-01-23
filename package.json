@@ -5,7 +5,7 @@
   "repository": "git@github.com:kaznak/normalize-japanese-addresses-cli.git",
   "license": "MIT",
   "author": "kaznak <kaznak.at.work@gmail.com>",
-  "main": "index.js",
+  "main": "dist/src/index.js",
   "scripts": {
     "build": "tsc",
     "clean": "rimraf coverage dist",
