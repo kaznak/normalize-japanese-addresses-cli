@@ -15,6 +15,7 @@
     "format": "prettier --ignore-unknown --write .",
     "lint": "eslint .",
     "prepare": "if type husky ; then husky install ; fi",
+    "prepublishOnly": "run-s build",
     "test": "jest"
   },
   "lint-staged": {
