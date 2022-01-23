@@ -9,7 +9,8 @@
   "scripts": {
     "format": "prettier --ignore-unknown --write .",
     "lint": "eslint .",
-    "prepare": "if type husky ; then husky install ; fi"
+    "prepare": "if type husky ; then husky install ; fi",
+    "test": "jest"
   },
   "lint-staged": {
     "*.(ts|js)": [
