@@ -2,10 +2,10 @@
   "name": "normalize-japanese-addresses-cli",
   "version": "0.0.0",
   "description": "a CLI of @geolonia/normalize-japanese-addresses",
-  "main": "index.js",
   "repository": "git@github.com:kaznak/normalize-japanese-addresses-cli.git",
-  "author": "kaznak <kaznak.at.work@gmail.com>",
   "license": "MIT",
+  "author": "kaznak <kaznak.at.work@gmail.com>",
+  "main": "index.js",
   "devDependencies": {
     "prettier": "^2.5.1",
     "prettier-plugin-packagejson": "^2.2.15"
