@@ -13,6 +13,6 @@ export default {
   plugins: [pluginTypescript(), pluginCommonjs(), pluginNodeResolve()],
   external: [
     ...Object.keys(pkg.dependencies || {}),
-    ...Object.keys(pkg.devDependencies || {}),
+    // ...Object.keys(pkg.devDependencies || {}),
   ],
 };
