@@ -8,7 +8,7 @@ export default {
   output: {
     file: "./dist/index.js",
     format: "cjs",
-    name: "hello-nodejs",
+    banner: "#!/usr/bin/env node",
   },
   plugins: [pluginTypescript(), pluginCommonjs(), pluginNodeResolve()],
   external: [
