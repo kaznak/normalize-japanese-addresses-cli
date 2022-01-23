@@ -105,3 +105,6 @@ dist
 
 # Jest coverage
 /coverage/
+
+# misc
+/tmp/
