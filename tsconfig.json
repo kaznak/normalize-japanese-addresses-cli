@@ -6,5 +6,8 @@
     "baseUrl": ".",
     "outDir": "./dist"
   },
-  "exclude": ["./dist", "./*.config.ts", "./test", "./coverage"]
+  "exclude": ["./dist", "./*.config.ts", "./test", "./coverage"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
 }
