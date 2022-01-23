@@ -6,6 +6,9 @@
   "license": "MIT",
   "author": "kaznak <kaznak.at.work@gmail.com>",
   "main": "index.js",
+  "scripts": {
+    "format": "prettier --ignore-unknown --write ."
+  },
   "devDependencies": {
     "prettier": "^2.5.1",
     "prettier-plugin-packagejson": "^2.2.15"
