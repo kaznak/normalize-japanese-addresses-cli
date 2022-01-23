@@ -7,7 +7,7 @@
   "author": "kaznak <kaznak.at.work@gmail.com>",
   "main": "dist/index.js",
   "bin": {
-    "hello-nodejs": "./dist/index.js"
+    "normalize-japanese-addresses": "./dist/index.js"
   },
   "scripts": {
     "build": "rollup -c",
