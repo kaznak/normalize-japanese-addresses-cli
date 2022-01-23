@@ -2,6 +2,8 @@
   /* Visit https://aka.ms/tsconfig.json to read more about this file */
   "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
+    "allowJs": true,
     "outDir": "./dist"
-  }
+  },
+  "exclude": ["./dist", "./*.config.ts", "./test", "./coverage"]
 }

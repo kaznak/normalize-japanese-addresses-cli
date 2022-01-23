@@ -8,6 +8,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "clean": "rimraf coverage dist",
     "format": "prettier --ignore-unknown --write .",
     "lint": "eslint .",
     "prepare": "if type husky ; then husky install ; fi",

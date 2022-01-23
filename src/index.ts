@@ -1,2 +1,2 @@
-export const phrase = "Hello, Node.js!";
+import phrase from "../lib/phrase";
 console.log(phrase);
