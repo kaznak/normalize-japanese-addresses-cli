@@ -16,5 +16,10 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
   },
+  settings: {
+    "import/resolver": {
+      typescript: {}, // this loads <rootdir>/tsconfig.json to eslint
+    },
+  },
   rules: {},
 };
