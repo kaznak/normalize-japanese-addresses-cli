@@ -1,6 +1,6 @@
 {
   "name": "normalize-japanese-addresses-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a CLI of @geolonia/normalize-japanese-addresses",
   "repository": "git@github.com:kaznak/normalize-japanese-addresses-cli.git",
   "license": "MIT",
