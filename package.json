@@ -10,7 +10,9 @@
     "normalize-japanese-addresses": "./dist/index.js"
   },
   "scripts": {
-    "build": "rollup -c",
+    "build": "run-p build:*",
+    "build:source": "rollup -c",
+    "build:fetchData": "curl -sL https://github.com/geolonia/japanese-addresses/archive/refs/heads/master.tar.gz | tar -C ./dist -zxf - && echo data downloaded.",
     "clean": "rimraf coverage dist",
     "format": "prettier --ignore-unknown --write .",
     "lint": "eslint .",
