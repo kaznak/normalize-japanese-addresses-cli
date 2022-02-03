@@ -27,4 +27,13 @@ program
       0 == argIndices.length ? [0] : argIndices.map((i) => parseInt(i) - 1);
     await main(indices);
   });
-program.parse();
+program.parseAsync().catch((err) => {
+  switch (err.code) {
+    case "EPIPE":
+      process.exit(0);
+      break;
+    default:
+      console.error(err);
+      process.exit(128 - err.errno);
+  }
+});
