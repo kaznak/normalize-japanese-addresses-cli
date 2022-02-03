@@ -10,7 +10,7 @@ function main(indices: Array<number>) {
       new NormalizeJapaneseAddressesCSV({
         indices,
         normalizerConfig: {
-          japaneseAddressesApi: `file://${__dirname}/japanese-addresses-master/api/ja`,
+          japaneseAddressesApi: `file://${__dirname}/../dist/japanese-addresses-master/api/ja`,
         },
       })
     )
