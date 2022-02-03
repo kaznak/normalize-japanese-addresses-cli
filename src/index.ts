@@ -6,7 +6,14 @@ import { NormalizeJapaneseAddressesCSV } from "lib/stream/normalizeJapaneseAddre
 function main(indices: Array<number>) {
   process.stdin
     .pipe(parse())
-    .pipe(new NormalizeJapaneseAddressesCSV({ indices }))
+    .pipe(
+      new NormalizeJapaneseAddressesCSV({
+        indices,
+        normalizerConfig: {
+          japaneseAddressesApi: "file://./japanese-addresses-master/api/ja",
+        },
+      })
+    )
     .pipe(stringify())
     .pipe(process.stdout);
 }

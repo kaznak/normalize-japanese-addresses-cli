@@ -1,5 +1,5 @@
 import { Transform, TransformCallback, TransformOptions } from "stream";
-import { normalize } from "@geolonia/normalize-japanese-addresses";
+import { config, normalize } from "@geolonia/normalize-japanese-addresses";
 
 type normalizeResultKey =
   | "pref"
@@ -24,12 +24,14 @@ interface NormalizeJapaneseAddressesCSVOptions extends TransformOptions {
   indices?: Array<number>;
   header?: boolean;
   japaneseAddressAttrs?: Array<normalizeResultKey>;
+  normalizerConfig?: Partial<typeof config>;
 }
 
 const normalizeJapaneseAddressesCSVOptionsDefaultValue = {
   indices: [],
   header: true,
   normalizeResultKeys,
+  normalizerConfig: {},
 };
 
 export class NormalizeJapaneseAddressesCSV extends Transform {
@@ -52,6 +54,16 @@ export class NormalizeJapaneseAddressesCSV extends Transform {
     this.header = innerOptions.header;
 
     this.normalizeResultKeys = innerOptions.normalizeResultKeys;
+
+    if (options.normalizerConfig?.japaneseAddressesApi) {
+      config.japaneseAddressesApi =
+        options.normalizerConfig.japaneseAddressesApi;
+    }
+    /* This can not pass type check.
+    Object.entries(options.normalizerConfig as typeof config).forEach(
+      ([key, value]) => (config[key] = value)
+    );
+    */
   }
   _transform(
     record: Array<unknown>,
