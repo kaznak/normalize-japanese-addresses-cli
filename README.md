@@ -13,10 +13,10 @@ yarn add normalize-japanese-addresses-cli
 ## Usage
 
 ```
-Usage: index [options] [indices...]
+Usage: normalize-japanese-addresses [options] [indices...]
 
 Arguments:
-  indices     field indices of CSV
+  indices     field indices(1 origin) of CSV
 
 Options:
   -h, --help  display help for command
