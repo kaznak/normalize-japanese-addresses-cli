@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/normalize-japanese-addresses-cli.svg)](https://badge.fury.io/js/normalize-japanese-addresses-cli)
 
-CLI of [@geolonia/normalize-japanese-addresses](https://github.com/geolonia/normalize-japanese-addresses)
+CLI of [@geolonia/normalize-japanese-addresses](https://github.com/geolonia/normalize-japanese-addresses) developed by [Geolonia](https://geolonia.com/)
 
 ## Install
 
